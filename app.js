@@ -248,3 +248,96 @@ function isSeedKun(moji){
 }
 isSeedKun("Seedkun");
 
+console.log("----------練習問題1-----------");
+
+let i = 9
+if (i % 2 ===0){
+	console.log(`${i}は偶数です`)
+}else{
+	console.log(`${i}は奇数です`)
+}
+
+console.log("----------練習問題2-----------");
+
+let math = 60;
+let english = 100;
+let total = math + english;
+if (math >=60 && english >= 60 && total >=140 ){
+	console.log("合格");
+}else{
+	console.log("不合格");
+}
+
+console.log("----------練習問題3-----------?????");
+let res = 0;
+let numbers = [1, 3, 4, 5, 8, 9, 3, 3];
+for(let i = 0; i > 8 ; i++){
+	if (numbers[i] === 3){
+		res = res + 1;
+	}
+}console.log(res);
+
+
+// for(let i = 0; i < 9; i++){
+// 	if (numbers[i]=== 3){
+// 		res = res + 1;
+// 	}
+// }console.log(res);
+
+console.log("----------練習問題4-----------");
+
+for(let i = 0; i <= 10 ; i++){
+	console.log(i*3);
+}
+
+console.log("----------練習問題5-----------");
+for(let i = 1 ; i <= 100 ; i++){
+   if(i % 5 ===0 && i % 3 ===0 ){
+   	console.log("Fizzbuzz");
+   }else if(i % 5 === 0){
+   	console.log("Buzz");
+   }else if(i % 3 === 0){
+   	console.log("Fizz");
+   }else{
+   	console.log(i);
+   }
+ }
+
+ console.log("----------練習問題6-----------");
+ for(let i = 1;i <= 9;i++)
+ 	for(let j = 1;j <= 9;j++){
+ 		console.log(i*j);
+ 	}
+
+
+ console.log("----------練習問題7-----------");
+  for(let i = 1;i <= 9;i++){
+ 	for(let j = 1;j <= 9;j++){
+ 		let res =  i * j;
+ 	 if(res >= 30){
+ 	 	continue;
+   }
+	console.log(res);
+  }
+}
+
+
+// for (let i = 1; i <= 9; i++) {
+//   for (let j = 1; j <= 9; j++) {
+//     let res = i * j;
+//     if (res >= 30) {
+//       continue;
+//     }
+//     console.log(res);
+//   }
+// }
+
+ console.log("----------練習問題8-----------");
+ let customer ={age:2,gender:"male"};
+  if(customer["age"] <= 3 ){
+  	console.log("入れます");
+  }else if(customer["gender"] === "female"){
+  	console.log("入れます");
+  }else{
+  	console.log("入れません");
+  }
