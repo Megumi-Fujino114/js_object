@@ -163,16 +163,88 @@ console.log("----------関数(引数付き)-------------");
 // 引数２；１つ数字
 // 処理内容；引数で受け取った文字列を引数で受け取った数値分繰り返し出力する
 
-// function printMessage(moji,num){
-// 	for (let i = 1;i <= num; i++)
-//     	 console.log(moji);
-// }
-// printMessage("たこ焼き",5)
-// printMessage("炭火焼",3)
+function printMessage(moji,num){
+	for (let i = 1;i <= num; i++)
+    	 console.log(moji);
+}
+printMessage("たこ焼き",5)
+printMessage("炭火焼",3)
 
 //
-function printMessage(moji,num){
-	for (let num = 1;num <= 5; num++)
-    	 console.log(moji*num);
+
+console.log("----------宿題56-------------");
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：printMaxNum
+// 引数1：1つの数値
+// 引数2：1つの数値
+// 処理内容：引数で受け取った2つの数値のうち、最も大きな数値を出力する。
+function printMaxNum(num1,num2){
+	if(num1 > num2){
+		console.log(num1)
+	}else{
+		console.log(num2)
+	}
 }
-printMessage("たこ焼き",5);
+printMaxNum(5,8);
+
+console.log("----------宿題57-------------");
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：getSquared
+// 引数1：1つの数値
+// 処理内容：引数で受け取った数値の2乗を計算し返す
+function getSquared(num){
+	console.log(num*num);
+}
+getSquared(8);
+
+console.log("----------宿題58-------------");
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：createSelfIntroductionText
+// 引数1：1つの文字列
+// 処理内容：「私の名前は○○です」という文字の〇〇を引数で受け取った文字列にし返す
+
+function createSelfIntroductionText(moji){
+ console.log("私の名前は"+ moji+"です")
+}
+
+createSelfIntroductionText("メグミ");
+
+console.log("----------宿題59-------------");
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：isEvenNumber
+// 引数1：1つの数値
+// 処理内容：引数で渡された値が偶数の場合は true、そうでない場合は false を返す。
+function isEvenNumber(num){
+	if(num % 2 ==0){
+		console.log(true);
+	}else{
+		console.log(false);
+	}
+}
+
+isEvenNumber(5);
+
+
+console.log("----------宿題60-------------");
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：isSeedKun
+// 引数1：任意の文字列
+// 処理内容：引数で渡された文字列が「SeedKun」の場合は true、そうでない場合は false を返す。
+function isSeedKun(moji){
+	if(moji == "Seedkun"){
+		console.log(true);
+	}else{
+		console.log(false);
+	}
+}
+isSeedKun("Seedkun");
+
