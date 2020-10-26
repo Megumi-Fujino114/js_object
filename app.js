@@ -198,7 +198,31 @@ console.log("----------宿題57-------------");
 function getSquared(num){
 	console.log(num*num);
 }
-getSquared(8);
+getSquared(5);
+
+console.log("----------宿題57違う回答-------------");
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：getSquared
+// 引数1：1つの数値
+// 処理内容：引数で受け取った数値の2乗を計算し返す
+
+// // 実行結果
+// 16
+
+//戻り値（返り値）return 値;の形で実行した場合に戻される値
+//引数と逆方向に値を送る
+
+function getSquared(num){
+	return num*num;
+}
+
+var result = getSquared(8);
+console.log(result);
+
+
+
 
 console.log("----------宿題58-------------");
 
@@ -213,6 +237,19 @@ function createSelfIntroductionText(moji){
 }
 
 createSelfIntroductionText("メグミ");
+
+
+
+
+console.log("----------宿題58違う回答----------");
+
+function createSelfIntroductionText(name) {
+    var msg = "私の名前は" + name + "です";
+    return msg;
+}
+
+var message = createSelfIntroductionText("NexSeed");
+console.log(message);
 
 console.log("----------宿題59-------------");
 
@@ -232,6 +269,20 @@ function isEvenNumber(num){
 isEvenNumber(5);
 
 
+console.log("----------宿題59の違う回答----------");
+
+function isEvenNumber(num) {
+    if (num % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+var result = isEvenNumber(3);
+console.log(result);
+
+
 console.log("----------宿題60-------------");
 
 // 以下の関数を作成して、作成した関数を実行してください。
@@ -247,6 +298,23 @@ function isSeedKun(moji){
 	}
 }
 isSeedKun("Seedkun");
+
+
+console.log("----------宿題60の違う回答-------------");
+
+function isSeedKun(str) {
+    if (str == "SeedKun") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+var result = isSeedKun("SeedKun");
+console.log(result);
+
+
+
 
 console.log("----------練習問題1-----------");
 
